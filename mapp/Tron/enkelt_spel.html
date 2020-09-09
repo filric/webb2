@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="/simple.js">
+        var catX = 100;
+        var catY = 100;
+        clearScreen();//uppdaterar skärmen
+        function start(){
+            for(var i=1; i<=5;i++){
+                rectangle(50*i,50*i,20,20,"red")//onödig kod
+            }
+            for(var i=1; i<=5; i++){
+                tal=random(3); //Slumpar ett tal och beroende på vilket tal det blir blir det olika färger på fyrkanterna
+                if(tal==0)
+                rectangle(50*i,50*i,20,20,"red")//gör fyrkanten röd
+                if(tal==1)
+                rectangle(50*i,50*i,20,20,"green")//gör fyrkanten grön
+                if(tal==2)
+                rectangle(50*i,50*i,20,20,"yellow")//gör fyrkanten gul
+
+            }
+
+        }
+    </script>
+</body>
+</html>
