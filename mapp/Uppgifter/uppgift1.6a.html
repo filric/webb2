@@ -7,8 +7,20 @@
 </head>
 <body>
     <script src="simple.js">
-            
-        line(100, 350, 450, 100, 10, "pink");
+        
+        function update(){
+            var x = 0;
+            while(x<400){
+                line(0, 0, 10*x, 10*x, 1, "lightblue");
+                line(0, 200, 10*x, 10*x, 1, "lightblue");
+                line(400, 200, 10*x, 10*x, 1, "lightblue");
+                line(400, 0, 10*x, 10*x, 1, "lightblue");
+                
+                
+                x++;
+
+            }
+        }
     </script>
     
 </body>
